@@ -22,8 +22,8 @@ favicon: # your favicon png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://haojen.github.io
-root: /
+url: https://a18768053239.github.io/daqian.github.io/
+root: /daqian.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
