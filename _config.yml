@@ -79,5 +79,5 @@ theme: Anisina
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/a18768053239/daqian.github.io.git
+  repo: git@daqian.github.com:a18768053239/daqian.github.io.git
   branch: gh-pages
