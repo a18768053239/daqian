@@ -3,13 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
-timezone:
+title: 大千物流
+subtitle: subtitle-未知
+author: 大千物流
+
+# custom Site settings
+# more detail check out docs
+# 用于title标签
+SEOTitle: 大千物流
+# 用于seo中的描述
+description: description未知
+header-img: img/daqian.jpg
+keyword: seo key words未知
+favicon: favicon.ico
+# custom end
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -18,15 +25,71 @@ root: /daqian.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-# Directory
+# SNS settings
+# RSS:
+# 社交账号
+weibo_username: 
+zhihu_username: 
+github_username: 
+twitter_username: 
+facebook_username:  
+linkedin_username: 
+
+# Build settings
+anchorjs: false                        # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings 
+disqus_username: 
+
+# Duoshuo settings
+duoshuo_username:  # 你的多说帐号
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+# Use livere
+use_livere:
+
+# Valine comment system https://valine.js.org
+valine: 
+  enable: false
+  appid:  #Leancloud应用的appId
+  appkey:  #Leancloud应用的appKey
+  verify: false #验证码
+  notify: false #评论回复提醒
+  avatar: mm #评论列表默认头像样式
+  placeholder: Just go go #评论框占位符
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id:
+# Google Analytics
+ga_track_id:             # Format: UA-xxxxxx-xx
+ga_domain:
+
+# 有侧边栏配置
+sidebar-about-description:  个人描述
+sidebar-avatar: img/daqian_logo.png
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# friends
+friends: 
+  - { href: www.baidu.com, title: 百度 }
+  - {href: www.weibi.com, title: weibo }
+
+# 目录
 source_dir: source
 public_dir: public
+# 标签文件夹
 tag_dir: tags
+# 归档文件夹
 archive_dir: archives
+# 分类文件夹
 category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -70,6 +133,15 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+markdown: 
+	plugins:   
+		- markdown-it-abbr   
+		- markdown-it-footnote   
+		- markdown-it-ins    
+		- markdown-it-sub    
+		- markdown-it-sup    
+		- markdown-it-emoji
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -81,3 +153,26 @@ deploy:
   type: git
   repo: git@daqian.github.com:a18768053239/daqian.github.io.git
   branch: gh-pages
+
+
+# img CDN path
+cdn-url:  # 你的CDN地址
+
+# Qiniu imageView2 API
+# More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
+clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
+clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+
+# post default images
+post-default-img: #博文默认的图片
+post-default-img-mobile: #移动端显示的图片
+
+# search api , set your custom key
+swiftype_key: 
+
+
+# archive page title 
+archive:
+    title: archives
+    description: 可以根据归档日期检索所有文件
