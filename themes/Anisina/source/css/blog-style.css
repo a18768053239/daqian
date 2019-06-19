@@ -376,13 +376,14 @@ article blockquote cite:before{
 .intro-header {
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #808080;
+    background-color: #fff;
     background-attachment: scroll;
     background-size: cover;
     height: 300px;
     display: table;
     width: 100%;
     margin-bottom: 20px;
+    box-shadow: 0 1px 3px #e8e8e8;
 }
 
 .intro-header>.container{
@@ -1099,7 +1100,7 @@ img::-moz-selection {
     height: 2px;
     position: absolute;
     width: 100%;
-    background: red;
+    background: #FC7097;
 }
 
 .navbar-custom.is-fixed .brand-logo {

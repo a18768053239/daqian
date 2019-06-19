@@ -101,6 +101,8 @@
 <!-- Custom Theme JavaScript -->
 <%- js('js/blog.js') %>
 
+<%- js('js/random-bg.js') %>
+
 <!-- async load function -->
 <script>
     function async(u, c) {
@@ -111,6 +113,18 @@
       if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
       s.parentNode.insertBefore(o, s);
     }
+</script>
+
+<script>
+var preview = $('.post-preview')[0];
+var intro = $('.intro-header')[0];
+if (preview) {
+  preview.style.backgroundImage = 'url("' + randBackground() + '")';
+}
+if (intro) {
+  intro.style.backgroundImage = 'url("' + randBackground() + '")';
+}
+
 </script>
 
 <!-- jquery.tagcloud.js -->
