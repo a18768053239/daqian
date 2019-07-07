@@ -4,7 +4,7 @@
 
 # Site
 title: 大千物流
-subtitle: subtitle-未知
+subtitle: 大千，为您保驾护航
 author: 大千物流
 
 # custom Site settings
@@ -12,9 +12,9 @@ author: 大千物流
 # 用于title标签
 SEOTitle: 大千物流
 # 用于seo中的描述
-description: description未知
+description: 宁波大千物流：专业海运、专业拼箱、专业拖车、专业报关
 header-img: 
-keyword: seo key words未知
+keyword: 大千物流，宁波大千国际物流有限公司
 favicon: favicon.ico
 # custom end
 
@@ -68,18 +68,18 @@ ga_track_id:             # Format: UA-xxxxxx-xx
 ga_domain:
 
 # 有侧边栏配置
-sidebar-about-description:  个人描述
+sidebar-about-description:  
+ - 专业海运、专业拼箱、专业拖车、专业报关。
+ - 联系方式：手机：18768053239；QQ：763657664；微信：lxd763657664。
+
 sidebar-avatar: img/daqian_logo.png
 
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# featured-tags: false                     # whether or not using Feature-Tags
+# featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 # friends
-friends: 
-  - { href: www.baidu.com, title: 百度 }
-  - {href: www.weibi.com, title: weibo }
 
 # 目录
 source_dir: source
@@ -90,6 +90,7 @@ tag_dir: tags
 archive_dir: archives
 # 分类文件夹
 category_dir: categories
+about_dir: about
 
 # Writing
 new_post_name: :title.md # File name of new posts

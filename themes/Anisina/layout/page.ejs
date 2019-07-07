@@ -157,16 +157,20 @@ layout: layout
             ">
 
             <!-- About Me -->
-            <section class="visible-md visible-lg" style="padding: 0 18px">
+            <section class="visible-md visible-lg" style="padding: 0 18px; word-break: break-all;">
                 <div class="short-about">
                     <!--侧边栏头像-->
                     <% if(config['sidebar-avatar']) { %>
                     <img src="<%= config['sidebar-avatar'] %>"/>
                     <% } %>
                     <h5><a href="<%= config.root %>about/"><%= config.author %></a></h5>
+                    <div style="text-align: left;">
                     <% if(config['sidebar-about-description']) { %>
-                    <p><%= config['sidebar-about-description'] %></p>
+                        <% config['sidebar-about-description'].forEach(function(item){%>
+                            <div><%=item %></div>
+                        <% }) %>
                     <% } %>
+                    </div>
                     <hr>
                     <!-- SNS Link 社交 -->
                     <ul class="list-inline">
